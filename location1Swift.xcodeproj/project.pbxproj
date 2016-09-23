@@ -12,6 +12,9 @@
 		1B4F592D1C20443100D86732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F592B1C20443100D86732 /* Main.storyboard */; };
 		1B4F592F1C20443100D86732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F592E1C20443100D86732 /* Assets.xcassets */; };
 		1B4F59321C20443100D86732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F59301C20443100D86732 /* LaunchScreen.storyboard */; };
+		1B4F593A1C20444500D86732 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F59391C20444500D86732 /* ReadMe.rtf */; };
+		1B4F593C1C20459A00D86732 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4F593B1C20459A00D86732 /* CoreLocation.framework */; };
+		1B4F593E1C2045A400D86732 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4F593D1C2045A400D86732 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1B4F592E1C20443100D86732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4F59311C20443100D86732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4F59331C20443100D86732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B4F59391C20444500D86732 /* ReadMe.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		1B4F593B1C20459A00D86732 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1B4F593D1C2045A400D86732 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4F593E1C2045A400D86732 /* MapKit.framework in Frameworks */,
+				1B4F593C1C20459A00D86732 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,9 @@
 		1B4F591B1C20443100D86732 = {
 			isa = PBXGroup;
 			children = (
+				1B4F593D1C2045A400D86732 /* MapKit.framework */,
+				1B4F593B1C20459A00D86732 /* CoreLocation.framework */,
+				1B4F59391C20444500D86732 /* ReadMe.rtf */,
 				1B4F59261C20443100D86732 /* location1Swift */,
 				1B4F59251C20443100D86732 /* Products */,
 			);
@@ -91,12 +102,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "John Wetters";
 				TargetAttributes = {
 					1B4F59231C20443100D86732 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = GM5A6G489N;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -125,6 +137,7 @@
 			files = (
 				1B4F59321C20443100D86732 /* LaunchScreen.storyboard in Resources */,
 				1B4F592F1C20443100D86732 /* Assets.xcassets in Resources */,
+				1B4F593A1C20444500D86732 /* ReadMe.rtf in Resources */,
 				1B4F592D1C20443100D86732 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +189,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -199,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -221,8 +236,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,9 +255,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -254,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WettersConsulting.location1Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -265,6 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WettersConsulting.location1Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -287,6 +307,7 @@
 				1B4F59381C20443200D86732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
